@@ -22,10 +22,21 @@ end
 
 def play(songs)
   #ask user to input song name or track number. output appropriate track
-  tmp = gets
   puts "Please enter a song name or number:"
-  if tmp.chomp 
-  
+  user_input =  Integer(gets.chomp) rescue ''
+    if user_input.is_a? Integer
+      if songs[user_input]
+        puts "Playing #{songs[user_input]}"
+      else
+        puts "Invalid input, please try again"
+      end
+    elsif user_input.is_a? String
+      if songs.include?(user_input)
+        puts "Playing #{user_input}"
+      else
+        puts "Invalid input, please try again"
+      end
+    end
 end
 
 def list(songs)
