@@ -37,7 +37,7 @@ end
 
 def exit()
   #output 'goodbye' & shut down program
-  
+  puts "Goodbye"
 end
 
 
