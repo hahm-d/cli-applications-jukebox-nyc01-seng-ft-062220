@@ -47,7 +47,7 @@ def list(songs)
   end
 end
 
-def exit()
+def exit_jukebox
   #output 'goodbye' & shut down program
   puts "Goodbye"
 end
@@ -55,8 +55,8 @@ end
 def run()
   puts "Please enter a command:"
   user_input = gets.strip
-  if user_input == "exit"
-    exit
+  if user_input == "exit_jukebox"
+    exit_jukebox
   elsif user_input == "play"
     play
   elsif user_input == "list"  
@@ -64,6 +64,6 @@ def run()
   elsif user_input == "help"
     help
   else 
-    
+    "invalid"
   end
 end
