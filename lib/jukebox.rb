@@ -54,17 +54,19 @@ end
 
 def run(songs)
   puts "Please enter a command:"
-  user_input = gets.strip
-  case user_input
-  when "exit"
-    exit_jukebox
-  when "play"
-    play(songs)
-  when "list"  
-    list(songs)
-  when "help"
-    help
-  else 
-    "invalid"
+  while user_input = gets.strip
+    case user_input
+    when "exit"
+      exit_jukebox
+      break
+    when "play"
+      play(songs)
+    when "list"  
+      list(songs)
+    when "help"
+      help
+    else 
+      puts "invalid entry. Please enter a command:"
+    end
   end
 end
