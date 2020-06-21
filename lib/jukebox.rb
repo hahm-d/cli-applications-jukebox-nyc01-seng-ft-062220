@@ -27,7 +27,9 @@ end
 
 def list(songs)
   #output list of songs 
-  songs.count 
+  songs.each_with_index do |song, index|
+      p index  + '. ' + song 
+  end
 end
 
 def exit()
