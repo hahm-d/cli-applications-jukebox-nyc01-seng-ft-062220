@@ -20,8 +20,9 @@ def help
   puts '- exit : exits this program'
 end
 
-def play()
+def play(songs)
   #ask user to input song name or track number. output appropriate track
+  puts "Please enter a song name or number:"
   
 end
 
