@@ -25,9 +25,9 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_input = gets.chomp
   #check if user_input can be a valid integer from default string value 
-    if user_input.to_i
-      if songs[user_input.to_i]
-        puts "Playing #{songs[user_input.to_i]}"
+    if user_input.to_i != 0 #any valid string will equal 0, thus if it equals 0, assume string.
+      if songs[user_input.to_i - 1]
+        puts "Playing #{songs[user_input.to_i - 1]}"
       else
         puts "Invalid input, please try again"
       end
