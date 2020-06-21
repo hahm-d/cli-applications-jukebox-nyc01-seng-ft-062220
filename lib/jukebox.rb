@@ -13,11 +13,11 @@ songs = [
 
 def help
   #output instructions for user on how to use the jukebox
-  p 'I accept the following commands:
-- help : displays this help message
-- list : displays a list of songs you can play
-- play : lets you choose a song to play
-- exit : exits this program'
+  puts 'I accept the following commands:'
+  puts '- help : displays this help message'
+  puts '- list : displays a list of songs you can play'
+  puts '- play : lets you choose a song to play'
+  puts '- exit : exits this program'
 end
 
 def play()
@@ -25,9 +25,9 @@ def play()
   
 end
 
-def list()
+def list(songs)
   #output list of songs 
-  
+  songs.count 
 end
 
 def exit()
