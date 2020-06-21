@@ -1,9 +1,19 @@
-# Add your code here
-def say_hello(name)
-  "Hi #{name}!"
+def help()
+  #output instructions for user on how to use the jukebox
+  
 end
- 
-puts "Enter your name:"
-users_name = gets.strip
- 
-puts say_hello(users_name)
+
+def play()
+  #ask user to input song name or track number. output appropriate track
+  
+end
+
+def list()
+  #output list of songs 
+  
+end
+
+def exit()
+  #output 'goodbye' & shut down program
+  
+end
